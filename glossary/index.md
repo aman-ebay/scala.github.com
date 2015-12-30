@@ -105,7 +105,7 @@ A _for comprehension_ is a type of [for expression](#for-expression) that create
 A _for expression_ is either a [for loop](#for-loop), which iterates over one or more collections, or a [for comprehension](#for-comprehension), which builds a new collection from the elements of one or more collections.  A `for` expression is built up of [generators](#generator), [filters](#filter), variable definitions, and (in the case of [for comprehensions](#for-comprehension)) a [yield](#yield) clause.
 
 * #### for loop
-A _for loop_ is a type of [for expression](#for-expression) that loops over one or more collections.  Since `for` loops return unit, they usually produce side-effects.  For example, `for (i <- 0 until 100) println(i)` prints the numbers 0 through 99.
+A _for loop_ is a type of [for expression](#for-expression) that loops over one or more collections.  Since `for` loops return `Unit`, they usually produce side-effects.  For example, `for (i <- 0 until 100) println(i)` prints the numbers 0 through 99.
 
 * #### free variable
 A _free variable_ of an expression is a variable that’s used inside the expression but not defined inside the expression. For instance, in the function literal expression `(x: Int) => (x, y)`, both variables `x` and `y` are used, but only `y` is a free variable, because it is not defined inside the expression.
